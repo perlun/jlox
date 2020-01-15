@@ -14,7 +14,7 @@ public class Lox {
     public static void main(String[] args) throws IOException {
         if (args.length > 1) {
             System.out.println("Usage: jlox [script]");
-            System.exit(64); ​
+            System.exit(64);
         } else if (args.length == 1) {
             runFile(args[0]);
         } else {
@@ -34,7 +34,7 @@ public class Lox {
         InputStreamReader input = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(input);
 
-        for (; ; ) { ​
+        for (; ; ) {
             System.out.print("> ");
             run(reader.readLine());
             hadError = false;
